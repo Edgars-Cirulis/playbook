@@ -40,25 +40,6 @@ actions:
     option: "configure-lpv"
     weight: 150
 
-  - !cmd:
-    exeDir: true
-    command: 'robocopy "Wallpapers" "%systemroot%\Web\Wallpaper\MeetRevision\v2" /E /PURGE /IM /IT /NP'
-    ignoreErrors: true
-
-  - !powerShell:
-    command: '.\WALLPAPER.ps1 -Mode Desktop -ImagePath $env:systemroot\Web\Wallpaper\MeetRevision\v2\desktop.jpg'
-    exeDir: true
-    runas: currentUserElevated
-    option: "configure-wallpaper"
-    weight: 45
-
-  - !powerShell: 
-    command: '.\WALLPAPER.ps1 -Mode LockScreen -ImagePath $env:systemroot\Web\Wallpaper\MeetRevision\v2\lockscreen.jpg'
-    exeDir: true
-    runas: currentUserElevated
-    option: "configure-wallpaper"
-    weight: 45 
-
   - !writeStatus: {status: "Configuring features"}
   - !run:
     exeDir: true

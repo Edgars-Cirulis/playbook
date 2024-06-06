@@ -43,15 +43,6 @@
 0.0.0.0 weus2watcab01.blob.core.windows.net
 0.0.0.0 weus2watcab02.blob.core.windows.net
 
-# Brave
-0.0.0.0 p3a.brave.com
-0.0.0.0 p2a.brave.com
-0.0.0.0 p3a-json.brave.com
-0.0.0.0 p2a-json.brave.com
-# 0.0.0.0 laptop-updates.brave.com
-# 0.0.0.0 variations.brave.com
-0.0.0.0 cr.brave.com
-
 # Visual Studio / VSCode
 0.0.0.0 vortex.data.microsoft.com
 0.0.0.0 dc.services.visualstudio.com
