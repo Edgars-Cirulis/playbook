@@ -59,7 +59,6 @@ actions:
   - !task: {path: 'Tasks\registry\updates\ms-store.yml'}
 
   # Miscellaneous
-  - !task: {path: 'Tasks\registry\misc\classic-photo-viewer.yml'}
   - !task: {path: 'Tasks\registry\misc\deprovisioned-apps.yml'}
   - !task: {path: 'Tasks\registry\misc\disable-installing-teams.yml'}
   - !task: {path: 'Tasks\registry\misc\disable-logging.yml'}

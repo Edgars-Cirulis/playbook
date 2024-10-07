@@ -69,3 +69,15 @@ actions:
   # == UCPD velocity - Disabled
   - !service: {name: 'UCPD', operation: change, startup: 4}
   - !powerShell: {command: "Disable-ScheduledTask -TaskPath '\\Microsoft\\Windows\\AppxDeploymentClient' -TaskName 'UCPD velocity'"}
+  
+  # == BitLocker Drive Encryption Service - Disabled
+  - !service: {name: 'BDESVC', operation: change, startup: 4}
+
+  # == Print Spooler - Disabled
+  - !service: {name: 'Spooler', operation: change, startup: 4}
+
+  # == Windows Search - Disabled
+  - !service: {name: 'WSearch', operation: change, startup: 4}
+
+    # == Bluetooth Support Service - Disabled
+  - !service: {name: 'bthserv', operation: change, startup: 4}

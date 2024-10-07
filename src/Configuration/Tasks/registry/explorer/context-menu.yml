@@ -4,9 +4,6 @@ description: Configure the context menu in Windows Explorer
 privilege: TrustedInstaller
 actions:
 
-  # Enables the classic right click context menu in Explorer on Windows 11
-  - !registryValue: {path: 'HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32', value: '', type: REG_SZ, data: '', option: "configure-lcm"}
-
   # === Add Take Ownership to the context menu.
   - !registryKey: {path: 'HKCR\*\shell\runas'}
   - !registryValue: {path: 'HKCR\*\shell\runas', value: '', type: REG_SZ, data: 'Take Ownership'}
