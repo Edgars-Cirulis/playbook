@@ -78,6 +78,3 @@ actions:
 
   # == Windows Search - Disabled
   - !service: {name: 'WSearch', operation: change, startup: 4}
-
-    # == Bluetooth Support Service - Disabled
-  - !service: {name: 'bthserv', operation: change, startup: 4}
